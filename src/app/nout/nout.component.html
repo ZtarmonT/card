@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col m3"><app-filter></app-filter></div>
+  <div class="col m9">
+    <div class="col  m3" *ngFor = "let cards of noutbooks ">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://i1.rozetka.ua/goods/2372998/prestigio_psb116c01bfh_bk_cis_images_2372998233.jpg">
+        </div>
+        <div class="card-content">
+          <b><p>{{cards.titlename}}</p></b>
+          <br>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          </p>
+          <hr>
+          <div class="row">
+            <div class="col m4"><p><b>Цена :</b></p></div>
+            <div class="col m8"><p>{{cards.price}} {{cards.currency}}</p></div>
+          </div>
+          <hr>
+          <p>Категория: {{cards.category}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Купить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

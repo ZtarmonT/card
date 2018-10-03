@@ -1,0 +1,14 @@
+.headmenu div{
+	text-align: center;
+}
+.headmenu div a p{
+	padding: 10px;
+	background: #2c4958;
+	color: white;
+	border: 1px solid black;
+}
+.headmenu div a p:hover{
+	background: white;
+	color: black;
+}
+
